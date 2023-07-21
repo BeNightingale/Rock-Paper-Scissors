@@ -1,0 +1,12 @@
+[1;31m
+Start test 1[0m
+> rock
+$Sorry, but the computer chose paper
+[1;31m
+Start test 2[0m
+> paper
+'Sorry, but the computer chose scissors
+[1;31m
+Start test 3[0m
+> scissors
+#Sorry, but the computer chose rock

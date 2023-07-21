@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-21T20:08:45" hostname="MBP-Beata.int.black-cat.tech" time="0.175">
+  <properties/>
+  <testcase name="start" classname="Tests" time="0.175"/>
+  <system-out><![CDATA[?[1;31m
+Start test 1?[0m
+> rock
+Sorry, but the computer chose paper
+?[1;31m
+Start test 2?[0m
+> paper
+Sorry, but the computer chose scissors
+?[1;31m
+Start test 3?[0m
+> scissors
+Sorry, but the computer chose rock
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
