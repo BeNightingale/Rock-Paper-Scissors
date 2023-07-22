@@ -1,5 +1,10 @@
 package rockpaperscissors;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
 import java.util.Map;
 
 import static rockpaperscissors.GameResult.*;
@@ -19,12 +24,19 @@ public class Main {
     );
     private static final GameService gameService = new GameService();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+
+        //final Path path = Paths.get("rating.txt");// this path is for Academy tests - file will be created when tests are running -  in this case no file I should create
+        final Path path = Paths.get("./Rock-Paper-Scissors (Java)/task/src/rockpaperscissors/scores.txt"); // added my file for my tests, if game is running correctly and scores are processed correctly
+        final List<String> content = Files.readAllLines(path);
+        System.out.println(content);
+        final String userName = gameService.startGame();
 
         String userOption = gameService.getUserOption();
+        int counter = gameService.determineUserRating(content, userName);
 
         while (!Option.isGameToBeEnded(userOption)) {
-            if (Option.isCorrectOption(userOption)) {
+            if (Option.isCompetitionOption(userOption)) {
                 final String computerOption = gameService.getComputerOption();
                 if ("error".equals(computerOption))
                     throw new WrongOptionException("Wrong computer choice, error!");
@@ -34,6 +46,9 @@ public class Main {
                 );
                 final GameResult gameResult = gameMap.get(usersMove.toString());
                 gameService.presentGameScore(gameResult, usersMove);
+                counter = gameService.updateCounter(gameResult, counter);
+            } else if (Option.isRatingToBePresented(userOption)) {
+                gameService.presentRating(counter);
             } else {
                 System.out.println("Invalid input");
             }

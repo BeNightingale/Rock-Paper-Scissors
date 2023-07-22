@@ -192,6 +192,128 @@ files:
         }
     }
   learner_created: false
+- name: src/rockpaperscissors/GameResult.java
+  visible: true
+  text: |
+    package rockpaperscissors;
+
+    /**
+     * game result will be determined for a user (if he wins)
+     */
+    public enum GameResult {
+        LOSS, DRAW, WIN
+    }
+  learner_created: true
+- name: src/rockpaperscissors/Option.java
+  visible: true
+  text: |
+    package rockpaperscissors;
+
+    import java.util.Objects;
+
+    public enum Option {
+        SCISSORS("scissors"),
+        PAPER("paper"),
+        ROCK("rock"),
+        EXIT("!exit");
+        private final String val;
+
+        Option(String val) {
+            this.val = val;
+        }
+
+        public String getVal() {
+            return val;
+        }
+
+        public static boolean isCorrectOption(String choice) {
+            if (choice == null || choice.isEmpty())
+                return false;
+            for (Option option : Option.values()) {
+                if (Objects.equals(choice, option.getVal()) && !Objects.equals(choice, Option.EXIT.getVal()))
+                    return true;
+            }
+            return false;
+        }
+
+        public static boolean isGameToBeEnded(String choice) {
+            if (choice == null || choice.isEmpty())
+                return false;
+            return Objects.equals(choice, Option.EXIT.getVal());
+        }
+    }
+  learner_created: true
+- name: src/rockpaperscissors/UsersMove.java
+  visible: true
+  text: |
+    package rockpaperscissors;
+
+    public record UsersMove(Option userChoice, Option computerChoice) {
+
+        @Override
+        public String toString() {
+            return "UsersMove{" +
+                    "userChoice=" + userChoice +
+                    ", computerChoice=" + computerChoice +
+                    '}';
+        }
+    }
+  learner_created: true
+- name: src/rockpaperscissors/GameService.java
+  visible: true
+  text: |
+    package rockpaperscissors;
+
+    import java.util.Scanner;
+
+    public class GameService {
+        final Scanner scanner = new Scanner(System.in);
+
+        public String getUserOption() {
+            return scanner.nextLine();
+        }
+
+        public String getComputerOption() {
+            final int random = (int) (Math.floor(Math.random() * 10)) % 3;
+            return switch (random) {
+                case 0 -> "paper";
+                case 1 -> "scissors";
+                case 2 -> "rock";
+                default -> "error";
+            };
+        }
+
+        public void presentGameScore(GameResult gameResult, UsersMove usersMove) {
+            switch (gameResult) {
+                case WIN ->
+                        System.out.printf("Well done. The computer chose %s and failed%n", usersMove.computerChoice().getVal());
+                case DRAW -> System.out.printf("There is a draw (%s)%n", usersMove.computerChoice().getVal());
+                case LOSS -> System.out.printf("Sorry, but the computer chose %s%n", usersMove.computerChoice().getVal());
+            }
+        }
+
+        public void endGame() {
+            System.out.println("Bye!");
+        }
+    }
+  learner_created: true
+- name: src/rockpaperscissors/WrongOptionException.java
+  visible: true
+  text: |
+    package rockpaperscissors;
+
+    public class WrongOptionException extends RuntimeException {
+        public WrongOptionException(String message) {
+            super(message);
+        }
+    }
+  learner_created: true
+- name: src/rockpaperscissors/scores.txt
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/314/stages/1767/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 22 Jul 2023 15:27:21 UTC"
 record: -1
