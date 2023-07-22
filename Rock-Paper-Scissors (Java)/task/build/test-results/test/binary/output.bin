@@ -1,453 +1,269 @@
 [1;31m
 Start test 1[0m
 > rock
+2Well done. The computer chose scissors and failed
+> paper
+.Well done. The computer chose rock and failed
+> scissors
+#Sorry, but the computer chose rock
+> paper
+'Sorry, but the computer chose scissors
+> scissors
+/Well done. The computer chose paper and failed
+> rock
+2Well done. The computer chose scissors and failed
+> paper
+.Well done. The computer chose rock and failed
+> scissors
+/Well done. The computer chose paper and failed
+> !exit
+Bye!
 [1;31m
 Start test 2[0m
-> rock
+> scissors
+#Sorry, but the computer chose rock
+> scissors
+/Well done. The computer chose paper and failed
+> scissors
+/Well done. The computer chose paper and failed
+> !exit
+Bye!
 [1;31m
 Start test 3[0m
 > rock
+2Well done. The computer chose scissors and failed
+> paper
+.Well done. The computer chose rock and failed
+> paper
+There is a draw (paper)
+> scissors
+/Well done. The computer chose paper and failed
+	> blabla
+Invalid input
+> !exit
+Bye!
 [1;31m
 Start test 4[0m
 > rock
+There is a draw (rock)
+
+> invalid
+Invalid input
+> !exit
+Bye!
 [1;31m
 Start test 5[0m
 > rock
+$Sorry, but the computer chose paper
+> rock
+$Sorry, but the computer chose paper
+> rock
+$Sorry, but the computer chose paper
+> rock-n-roll
+Invalid input
+> !exit
+Bye!
 [1;31m
 Start test 6[0m
 > rock
-[1;31m
-Start test 7[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 8[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 9[0m
+2Well done. The computer chose scissors and failed
 > rock
-[1;31m
-Start test 10[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 11[0m
+There is a draw (rock)
 > rock
-[1;31m
-Start test 12[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 13[0m
+2Well done. The computer chose scissors and failed
 > rock
-[1;31m
-Start test 14[0m
+2Well done. The computer chose scissors and failed
 > rock
-[1;31m
-Start test 15[0m
+There is a draw (rock)
 > rock
-[1;31m
-Start test 16[0m
+There is a draw (rock)
 > rock
-[1;31m
-Start test 17[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 18[0m
+2Well done. The computer chose scissors and failed
 > rock
-[1;31m
-Start test 19[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 20[0m
+2Well done. The computer chose scissors and failed
 > rock
-[1;31m
-Start test 21[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 22[0m
+2Well done. The computer chose scissors and failed
 > rock
-[1;31m
-Start test 23[0m
+There is a draw (rock)
 > rock
-[1;31m
-Start test 24[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 25[0m
+2Well done. The computer chose scissors and failed
 > rock
-[1;31m
-Start test 26[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 27[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 28[0m
+2Well done. The computer chose scissors and failed
 > rock
-[1;31m
-Start test 29[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 30[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 31[0m
+There is a draw (rock)
 > rock
-[1;31m
-Start test 32[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 33[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 34[0m
+2Well done. The computer chose scissors and failed
 > rock
-[1;31m
-Start test 35[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 36[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 37[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 38[0m
+2Well done. The computer chose scissors and failed
 > rock
-[1;31m
-Start test 39[0m
+There is a draw (rock)
 > rock
-[1;31m
-Start test 40[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 41[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 42[0m
+2Well done. The computer chose scissors and failed
 > rock
-[1;31m
-Start test 43[0m
+There is a draw (rock)
 > rock
-[1;31m
-Start test 44[0m
+2Well done. The computer chose scissors and failed
 > rock
-[1;31m
-Start test 45[0m
+2Well done. The computer chose scissors and failed
 > rock
-[1;31m
-Start test 46[0m
+There is a draw (rock)
 > rock
-[1;31m
-Start test 47[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 48[0m
+$Sorry, but the computer chose paper
 > rock
-[1;31m
-Start test 49[0m
+2Well done. The computer chose scissors and failed
 > rock
-[1;31m
-Start test 50[0m
+2Well done. The computer chose scissors and failed
 > rock
-[1;31m
-Start test 51[0m
-> paper
-[1;31m
-Start test 52[0m
-> paper
-[1;31m
-Start test 53[0m
-> paper
-[1;31m
-Start test 54[0m
-> paper
-[1;31m
-Start test 55[0m
-> paper
-[1;31m
-Start test 56[0m
-> paper
-[1;31m
-Start test 57[0m
-> paper
-[1;31m
-Start test 58[0m
-> paper
-[1;31m
-Start test 59[0m
-> paper
-[1;31m
-Start test 60[0m
-> paper
-[1;31m
-Start test 61[0m
-> paper
-[1;31m
-Start test 62[0m
-> paper
-[1;31m
-Start test 63[0m
-> paper
-[1;31m
-Start test 64[0m
-> paper
-[1;31m
-Start test 65[0m
-> paper
-[1;31m
-Start test 66[0m
-> paper
-[1;31m
-Start test 67[0m
-> paper
-[1;31m
-Start test 68[0m
-> paper
-[1;31m
-Start test 69[0m
-> paper
-[1;31m
-Start test 70[0m
-> paper
-[1;31m
-Start test 71[0m
-> paper
-[1;31m
-Start test 72[0m
-> paper
-[1;31m
-Start test 73[0m
-> paper
-[1;31m
-Start test 74[0m
-> paper
-[1;31m
-Start test 75[0m
-> paper
-[1;31m
-Start test 76[0m
-> paper
-[1;31m
-Start test 77[0m
-> paper
-[1;31m
-Start test 78[0m
-> paper
-[1;31m
-Start test 79[0m
-> paper
-[1;31m
-Start test 80[0m
-> paper
-[1;31m
-Start test 81[0m
-> paper
-[1;31m
-Start test 82[0m
-> paper
-[1;31m
-Start test 83[0m
-> paper
-[1;31m
-Start test 84[0m
-> paper
-[1;31m
-Start test 85[0m
-> paper
-[1;31m
-Start test 86[0m
-> paper
-[1;31m
-Start test 87[0m
-> paper
-[1;31m
-Start test 88[0m
-> paper
-[1;31m
-Start test 89[0m
-> paper
-[1;31m
-Start test 90[0m
-> paper
-[1;31m
-Start test 91[0m
-> paper
-[1;31m
-Start test 92[0m
-> paper
-[1;31m
-Start test 93[0m
-> paper
-[1;31m
-Start test 94[0m
-> paper
-[1;31m
-Start test 95[0m
-> paper
-[1;31m
-Start test 96[0m
-> paper
-[1;31m
-Start test 97[0m
-> paper
-[1;31m
-Start test 98[0m
-> paper
-[1;31m
-Start test 99[0m
-> paper
-[1;31m
-Start test 100[0m
-> paper
-[1;31m
-Start test 101[0m
-> scissors
-[1;31m
-Start test 102[0m
-> scissors
-[1;31m
-Start test 103[0m
-> scissors
-[1;31m
-Start test 104[0m
-> scissors
-[1;31m
-Start test 105[0m
-> scissors
-[1;31m
-Start test 106[0m
-> scissors
-[1;31m
-Start test 107[0m
-> scissors
-[1;31m
-Start test 108[0m
-> scissors
-[1;31m
-Start test 109[0m
-> scissors
-[1;31m
-Start test 110[0m
-> scissors
-[1;31m
-Start test 111[0m
-> scissors
-[1;31m
-Start test 112[0m
-> scissors
-[1;31m
-Start test 113[0m
-> scissors
-[1;31m
-Start test 114[0m
-> scissors
-[1;31m
-Start test 115[0m
-> scissors
-[1;31m
-Start test 116[0m
-> scissors
-[1;31m
-Start test 117[0m
-> scissors
-[1;31m
-Start test 118[0m
-> scissors
-[1;31m
-Start test 119[0m
-> scissors
-[1;31m
-Start test 120[0m
-> scissors
-[1;31m
-Start test 121[0m
-> scissors
-[1;31m
-Start test 122[0m
-> scissors
-[1;31m
-Start test 123[0m
-> scissors
-[1;31m
-Start test 124[0m
-> scissors
-[1;31m
-Start test 125[0m
-> scissors
-[1;31m
-Start test 126[0m
-> scissors
-[1;31m
-Start test 127[0m
-> scissors
-[1;31m
-Start test 128[0m
-> scissors
-[1;31m
-Start test 129[0m
-> scissors
-[1;31m
-Start test 130[0m
-> scissors
-[1;31m
-Start test 131[0m
-> scissors
-[1;31m
-Start test 132[0m
-> scissors
-[1;31m
-Start test 133[0m
-> scissors
-[1;31m
-Start test 134[0m
-> scissors
-[1;31m
-Start test 135[0m
-> scissors
-[1;31m
-Start test 136[0m
-> scissors
-[1;31m
-Start test 137[0m
-> scissors
-[1;31m
-Start test 138[0m
-> scissors
-[1;31m
-Start test 139[0m
-> scissors
-[1;31m
-Start test 140[0m
-> scissors
-[1;31m
-Start test 141[0m
-> scissors
-[1;31m
-Start test 142[0m
-> scissors
-[1;31m
-Start test 143[0m
-> scissors
-[1;31m
-Start test 144[0m
-> scissors
-[1;31m
-Start test 145[0m
-> scissors
-[1;31m
-Start test 146[0m
-> scissors
-[1;31m
-Start test 147[0m
-> scissors
-[1;31m
-Start test 148[0m
-> scissors
-[1;31m
-Start test 149[0m
-> scissors
-[1;31m
-Start test 150[0m
-> scissors
-[1;31m
-Start test 151[0m
+$Sorry, but the computer chose paper
 > rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+$Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+$Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+2Well done. The computer chose scissors and failed
+> rock
+$Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+2Well done. The computer chose scissors and failed
+> rock
+2Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+2Well done. The computer chose scissors and failed
+> rock
+$Sorry, but the computer chose paper
+> rock
+2Well done. The computer chose scissors and failed
+> rock
+2Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+$Sorry, but the computer chose paper
+> rock
+2Well done. The computer chose scissors and failed
+> rock
+$Sorry, but the computer chose paper
+> rock
+$Sorry, but the computer chose paper
+> rock
+$Sorry, but the computer chose paper
+> rock
+2Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+$Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+$Sorry, but the computer chose paper
+> rock
+$Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+$Sorry, but the computer chose paper
+> rock
+2Well done. The computer chose scissors and failed
+> rock
+2Well done. The computer chose scissors and failed
+> rock
+2Well done. The computer chose scissors and failed
+> rock
+2Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+2Well done. The computer chose scissors and failed
+> rock
+$Sorry, but the computer chose paper
+> rock
+2Well done. The computer chose scissors and failed
+> rock
+2Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+2Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+$Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+$Sorry, but the computer chose paper
+> rock
+$Sorry, but the computer chose paper
+> rock
+$Sorry, but the computer chose paper
+> rock
+$Sorry, but the computer chose paper
+> rock
+$Sorry, but the computer chose paper
+> !exit
+Bye!
