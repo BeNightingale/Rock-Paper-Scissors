@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://cogniterra.org/media/attachments/lesson/27238/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: "Sat, 22 Jul 2023 07:56:09 UTC"
+update_date: "Wed, 02 Aug 2023 14:04:08 UTC"
 stages:
 - id: 1764
   step: 24615
@@ -19,7 +19,7 @@ stages:
   is_completed: true
 - id: 1768
   step: 24619
-  is_completed: false
+  is_completed: true
 topics:
   0:
   - title: Units of information

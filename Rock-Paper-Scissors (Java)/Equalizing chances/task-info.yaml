@@ -126,7 +126,7 @@ files:
 - name: src/rockpaperscissors/WrongOptionException.java
   visible: true
   learner_created: true
-feedback_link: https://hyperskill.org/projects/314/stages/1765/implement#comment
+feedback_link: https://hyperskill.org/learn/step/24616#comment
 status: Solved
 feedback:
   message: Congratulations!

@@ -1,39 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-22T15:27:20" hostname="MBP-Beata.int.black-cat.tech" time="0.79">
+<testsuite name="Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-31T18:33:17" hostname="MBP-Beata.int.black-cat.tech" time="0.86">
   <properties/>
-  <testcase name="start" classname="Tests" time="0.79"/>
+  <testcase name="start" classname="Tests" time="0.86"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
-[Bob 350, Jane 200, Alex 400]
 Enter your name: 
 > Bob
 Hello, Bob
+> 
+Okay, let's start
 > rock
-Sorry, but the computer chose paper
+There is a draw (rock)
 > paper
-There is a draw (paper)
+Sorry, but the computer chose scissors
 > scissors
-Sorry, but the computer chose rock
+There is a draw (scissors)
 > paper
-Well done. The computer chose rock and failed
+Sorry, but the computer chose scissors
+> scissors
+There is a draw (scissors)
+> rock
+Well done. The computer chose scissors and failed
+> paper
+Sorry, but the computer chose scissors
 > scissors
 Well done. The computer chose paper and failed
-> rock
-Sorry, but the computer chose paper
-> paper
-There is a draw (paper)
-> scissors
-Sorry, but the computer chose rock
 > !exit
 Bye!
 ?[1;31m
 Start test 2?[0m
-[Bob 350, Jane 200, Alex 400]
 Enter your name: 
 > Bob
 Hello, Bob
+> 
+Okay, let's start
 > scissors
-There is a draw (scissors)
+Sorry, but the computer chose rock
 > scissors
 Sorry, but the computer chose rock
 > scissors
@@ -42,16 +44,17 @@ Sorry, but the computer chose rock
 Bye!
 ?[1;31m
 Start test 3?[0m
-[Bob 350, Jane 200, Alex 400]
 Enter your name: 
 > Bob
 Hello, Bob
+> 
+Okay, let's start
 > rock
 Well done. The computer chose scissors and failed
 > paper
-There is a draw (paper)
-> paper
 Well done. The computer chose rock and failed
+> paper
+Sorry, but the computer chose scissors
 > scissors
 There is a draw (scissors)
 > blabla
@@ -60,68 +63,41 @@ Invalid input
 Bye!
 ?[1;31m
 Start test 4?[0m
-[Bob 350, Jane 200, Alex 400]
 Enter your name: 
 > Bob
 Hello, Bob
+> 
+Okay, let's start
 > rock
-Sorry, but the computer chose paper
+Well done. The computer chose scissors and failed
 > invalid
 Invalid input
 > !exit
 Bye!
 ?[1;31m
 Start test 5?[0m
-[Bob 350, Jane 200, Alex 400]
 Enter your name: 
 > Bob
 Hello, Bob
+> 
+Okay, let's start
 > rock
 Sorry, but the computer chose paper
 > rock
 There is a draw (rock)
 > rock
-Sorry, but the computer chose paper
+Well done. The computer chose scissors and failed
 > rock-n-roll
 Invalid input
 > !exit
 Bye!
 ?[1;31m
 Start test 6?[0m
-[Bob 350, Jane 200, Alex 400]
 Enter your name: 
 > Bob
 Hello, Bob
-> rock
-Well done. The computer chose scissors and failed
-> rock
-There is a draw (rock)
-> rock
-Sorry, but the computer chose paper
-> rock
-Sorry, but the computer chose paper
-> rock
-There is a draw (rock)
-> rock
-Sorry, but the computer chose paper
-> rock
-There is a draw (rock)
-> rock
-There is a draw (rock)
-> rock
-There is a draw (rock)
-> rock
-Well done. The computer chose scissors and failed
-> rock
-Well done. The computer chose scissors and failed
-> rock
-Well done. The computer chose scissors and failed
-> rock
-There is a draw (rock)
-> rock
-Sorry, but the computer chose paper
-> rock
-There is a draw (rock)
+> 
+Okay, let's start
 > rock
 Sorry, but the computer chose paper
 > rock
@@ -131,27 +107,15 @@ Sorry, but the computer chose paper
 > rock
 Well done. The computer chose scissors and failed
 > rock
-Well done. The computer chose scissors and failed
-> rock
-Well done. The computer chose scissors and failed
-> rock
-Sorry, but the computer chose paper
-> rock
-Well done. The computer chose scissors and failed
-> rock
-There is a draw (rock)
-> rock
-Sorry, but the computer chose paper
-> rock
-There is a draw (rock)
-> rock
 There is a draw (rock)
 > rock
 Well done. The computer chose scissors and failed
 > rock
 Sorry, but the computer chose paper
 > rock
-Sorry, but the computer chose paper
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
 > rock
 Well done. The computer chose scissors and failed
 > rock
@@ -159,43 +123,9 @@ Well done. The computer chose scissors and failed
 > rock
 There is a draw (rock)
 > rock
-Sorry, but the computer chose paper
-> rock
-Sorry, but the computer chose paper
-> rock
-Sorry, but the computer chose paper
-> rock
-Sorry, but the computer chose paper
-> rock
-There is a draw (rock)
-> rock
-Sorry, but the computer chose paper
-> rock
-Well done. The computer chose scissors and failed
-> rock
-There is a draw (rock)
-> rock
-Well done. The computer chose scissors and failed
-> rock
-There is a draw (rock)
-> rock
-Well done. The computer chose scissors and failed
-> rock
-There is a draw (rock)
-> rock
-Sorry, but the computer chose paper
-> rock
-There is a draw (rock)
-> rock
 Well done. The computer chose scissors and failed
 > rock
 Sorry, but the computer chose paper
-> rock
-Sorry, but the computer chose paper
-> rock
-There is a draw (rock)
-> rock
-Well done. The computer chose scissors and failed
 > rock
 Well done. The computer chose scissors and failed
 > rock
@@ -209,9 +139,25 @@ Sorry, but the computer chose paper
 > rock
 Sorry, but the computer chose paper
 > rock
-There is a draw (rock)
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
 > rock
 Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
 > rock
 Sorry, but the computer chose paper
 > rock
@@ -221,15 +167,19 @@ Sorry, but the computer chose paper
 > rock
 There is a draw (rock)
 > rock
-Sorry, but the computer chose paper
+Well done. The computer chose scissors and failed
 > rock
-Sorry, but the computer chose paper
-> rock
-Sorry, but the computer chose paper
+There is a draw (rock)
 > rock
 Well done. The computer chose scissors and failed
 > rock
-Sorry, but the computer chose paper
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
 > rock
 Well done. The computer chose scissors and failed
 > rock
@@ -245,6 +195,54 @@ Sorry, but the computer chose paper
 > rock
 Well done. The computer chose scissors and failed
 > rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
 Well done. The computer chose scissors and failed
 > rock
 Well done. The computer chose scissors and failed
@@ -257,19 +255,11 @@ There is a draw (rock)
 > rock
 Sorry, but the computer chose paper
 > rock
-Well done. The computer chose scissors and failed
-> rock
-Well done. The computer chose scissors and failed
-> rock
-Well done. The computer chose scissors and failed
-> rock
-Well done. The computer chose scissors and failed
+There is a draw (rock)
 > rock
 There is a draw (rock)
 > rock
 Sorry, but the computer chose paper
-> rock
-Well done. The computer chose scissors and failed
 > rock
 There is a draw (rock)
 > rock
@@ -277,71 +267,46 @@ Well done. The computer chose scissors and failed
 > rock
 Sorry, but the computer chose paper
 > rock
-There is a draw (rock)
+Sorry, but the computer chose paper
 > rock
 There is a draw (rock)
 > rock
-Well done. The computer chose scissors and failed
+There is a draw (rock)
 > rock
-Well done. The computer chose scissors and failed
+Sorry, but the computer chose paper
 > rock
-Well done. The computer chose scissors and failed
+Sorry, but the computer chose paper
 > rock
 Well done. The computer chose scissors and failed
 > rock
 Sorry, but the computer chose paper
 > rock
 There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
 > !exit
 Bye!
 ?[1;31m
 Start test 7?[0m
-[Bob 350, Jane 200, Alex 400]
 Enter your name: 
 > Bob
 Hello, Bob
-> rock
-There is a draw (rock)
-> rock
-There is a draw (rock)
-> rock
-Well done. The computer chose scissors and failed
-> rock
-There is a draw (rock)
-> rock
-There is a draw (rock)
-> rock
-There is a draw (rock)
-> rock
-Sorry, but the computer chose paper
-> rock
-There is a draw (rock)
-> rock
-Well done. The computer chose scissors and failed
-> rock
-Sorry, but the computer chose paper
-> rock
-Sorry, but the computer chose paper
-> rock
-Sorry, but the computer chose paper
-> rock
-Well done. The computer chose scissors and failed
-> rock
-Sorry, but the computer chose paper
-> rock
-There is a draw (rock)
-> rock
-There is a draw (rock)
-> rock
-Well done. The computer chose scissors and failed
-> rock
-Sorry, but the computer chose paper
-> rock
-There is a draw (rock)
-> rock
-Well done. The computer chose scissors and failed
-> rock
-There is a draw (rock)
+> 
+Okay, let's start
 > rock
 Sorry, but the computer chose paper
 > rock
@@ -353,19 +318,7 @@ There is a draw (rock)
 > rock
 Sorry, but the computer chose paper
 > rock
-There is a draw (rock)
-> rock
-Sorry, but the computer chose paper
-> rock
-There is a draw (rock)
-> rock
-There is a draw (rock)
-> rock
-Sorry, but the computer chose paper
-> rock
-There is a draw (rock)
-> rock
-Sorry, but the computer chose paper
+Well done. The computer chose scissors and failed
 > rock
 Well done. The computer chose scissors and failed
 > rock
@@ -375,27 +328,9 @@ Sorry, but the computer chose paper
 > rock
 Well done. The computer chose scissors and failed
 > rock
-There is a draw (rock)
-> rock
-Sorry, but the computer chose paper
-> rock
-Sorry, but the computer chose paper
-> rock
 Well done. The computer chose scissors and failed
 > rock
 Well done. The computer chose scissors and failed
-> rock
-There is a draw (rock)
-> rock
-Sorry, but the computer chose paper
-> rock
-Sorry, but the computer chose paper
-> rock
-There is a draw (rock)
-> rock
-Well done. The computer chose scissors and failed
-> rock
-Sorry, but the computer chose paper
 > rock
 Well done. The computer chose scissors and failed
 > rock
@@ -403,31 +338,7 @@ Sorry, but the computer chose paper
 > rock
 Sorry, but the computer chose paper
 > rock
-Sorry, but the computer chose paper
-> rock
-Well done. The computer chose scissors and failed
-> rock
-Sorry, but the computer chose paper
-> rock
-Sorry, but the computer chose paper
-> rock
-Sorry, but the computer chose paper
-> rock
 There is a draw (rock)
-> rock
-There is a draw (rock)
-> rock
-There is a draw (rock)
-> rock
-Well done. The computer chose scissors and failed
-> rock
-There is a draw (rock)
-> rock
-Sorry, but the computer chose paper
-> rock
-Well done. The computer chose scissors and failed
-> rock
-Sorry, but the computer chose paper
 > rock
 Well done. The computer chose scissors and failed
 > rock
@@ -441,9 +352,63 @@ Sorry, but the computer chose paper
 > rock
 Sorry, but the computer chose paper
 > rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
 Sorry, but the computer chose paper
 > rock
 Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
 > rock
 Sorry, but the computer chose paper
 > rock
@@ -455,21 +420,11 @@ Sorry, but the computer chose paper
 > rock
 Sorry, but the computer chose paper
 > rock
-Sorry, but the computer chose paper
-> rock
 Well done. The computer chose scissors and failed
 > rock
 There is a draw (rock)
 > rock
 Well done. The computer chose scissors and failed
-> rock
-Well done. The computer chose scissors and failed
-> rock
-Well done. The computer chose scissors and failed
-> rock
-Well done. The computer chose scissors and failed
-> rock
-Sorry, but the computer chose paper
 > rock
 There is a draw (rock)
 > rock
@@ -477,6 +432,46 @@ Well done. The computer chose scissors and failed
 > rock
 Sorry, but the computer chose paper
 > rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+There is a draw (rock)
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
+> rock
 Well done. The computer chose scissors and failed
 > rock
 Sorry, but the computer chose paper
@@ -485,13 +480,25 @@ There is a draw (rock)
 > rock
 Well done. The computer chose scissors and failed
 > rock
+There is a draw (rock)
+> rock
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
 Sorry, but the computer chose paper
 > rock
 There is a draw (rock)
 > rock
-There is a draw (rock)
+Sorry, but the computer chose paper
 > rock
-There is a draw (rock)
+Well done. The computer chose scissors and failed
+> rock
+Sorry, but the computer chose paper
+> rock
+Sorry, but the computer chose paper
+> rock
+Well done. The computer chose scissors and failed
 > rock
 There is a draw (rock)
 > rock
@@ -499,7 +506,58 @@ Well done. The computer chose scissors and failed
 > rock
 Well done. The computer chose scissors and failed
 > !rating
-Your rating: 4600
+Your rating: 5250
+> !exit
+Bye!
+?[1;31m
+Start test 8?[0m
+Enter your name: 
+> Bob
+Hello, Bob
+> rock,gun,lightning,devil,dragon,water,air,paper,sponge,wolf,tree,human,snake,scissors,fire
+Okay, let's start
+> tree
+Well done. The computer chose sponge and failed
+> water
+Well done. The computer chose devil and failed
+> human
+Well done. The computer chose air and failed
+> lightning
+Sorry, but the computer chose paper
+> lightning
+Sorry, but the computer chose air
+> fire
+Sorry, but the computer chose rock
+> sponge
+Well done. The computer chose devil and failed
+> fire
+Sorry, but the computer chose water
+> paper
+Sorry, but the computer chose sponge
+> human
+Sorry, but the computer chose devil
+> water
+Well done. The computer chose dragon and failed
+> dragon
+Sorry, but the computer chose wolf
+> tree
+Well done. The computer chose sponge and failed
+> snake
+Sorry, but the computer chose devil
+> air
+Well done. The computer chose lightning and failed
+> water
+There is a draw (water)
+> fire
+Sorry, but the computer chose air
+> fire
+Sorry, but the computer chose gun
+> gun
+Sorry, but the computer chose dragon
+> scissors
+Well done. The computer chose sponge and failed
+> !rating
+Your rating: 1200
 > !exit
 Bye!
 ]]></system-out>

@@ -214,7 +214,7 @@ files:
 - name: src/rockpaperscissors/GameService.java
   visible: true
   learner_created: true
-feedback_link: https://hyperskill.org/projects/314/stages/1766/implement#comment
+feedback_link: https://hyperskill.org/learn/step/24617#comment
 status: Solved
 feedback:
   message: Congratulations!

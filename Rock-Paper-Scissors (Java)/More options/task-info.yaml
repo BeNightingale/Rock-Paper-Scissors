@@ -186,6 +186,159 @@ files:
     \ score.\\n\" +\n                            \"In case the user loses, don't change\
     \ the score.\_\");\n        return CheckResult.correct();\n\n    }\n}\n"
   learner_created: false
-feedback_link: https://hyperskill.org/projects/314/stages/1768/implement#comment
-status: Unchecked
+- name: src/rockpaperscissors/GameResult.java
+  visible: true
+  text: |
+    package rockpaperscissors;
+
+    /**
+     * game result will be determined for a user (if he wins)
+     */
+    public enum GameResult {
+        LOSS, DRAW, WIN
+    }
+  learner_created: true
+- name: src/rockpaperscissors/scores.txt
+  visible: true
+  text: |-
+    Bob 350
+    Tim 200
+    Alex 150
+  learner_created: true
+- name: src/rockpaperscissors/Option.java
+  visible: true
+  text: |
+    package rockpaperscissors;
+
+    import java.util.Objects;
+
+    public enum Option {
+        SCISSORS("scissors"),
+        PAPER("paper"),
+        ROCK("rock"),
+        EXIT("!exit"),
+        RATING("!rating");
+        private final String val;
+
+        Option(String val) {
+            this.val = val;
+        }
+
+        public String getVal() {
+            return val;
+        }
+
+        public static boolean isCompetitionOption(String choice) {
+            if (choice == null || choice.isEmpty())
+                return false;
+            for (Option option : Option.values()) {
+                if (Objects.equals(choice, option.getVal())
+                        && !Objects.equals(choice, Option.EXIT.getVal())
+                        && !Objects.equals(choice, Option.RATING.getVal())
+                )
+                    return true;
+            }
+            return false;
+        }
+
+        public static boolean isRatingToBePresented(String choice) {
+            if (choice == null || choice.isEmpty())
+                return false;
+            return Objects.equals(choice, Option.RATING.getVal());
+        }
+
+        public static boolean isGameToBeEnded(String choice) {
+            if (choice == null || choice.isEmpty())
+                return false;
+            return Objects.equals(choice, Option.EXIT.getVal());
+        }
+    }
+  learner_created: true
+- name: src/rockpaperscissors/GameService.java
+  visible: true
+  text: |
+    package rockpaperscissors;
+
+    import java.util.List;
+    import java.util.Scanner;
+
+    public class GameService {
+        final Scanner scanner = new Scanner(System.in);
+
+        public String startGame() {
+            System.out.println("Enter your name: ");
+            final String userName = scanner.nextLine();
+            System.out.printf("Hello, %s%n", userName);
+            return userName;
+        }
+
+        public String getUserOption() {
+            return scanner.nextLine();
+        }
+
+        public String getComputerOption() {
+            final int random = (int) (Math.floor(Math.random() * 10)) % 3;
+            return switch (random) {
+                case 0 -> "paper";
+                case 1 -> "scissors";
+                case 2 -> "rock";
+                default -> "error";
+            };
+        }
+
+        public void presentGameScore(GameResult gameResult, UsersMove usersMove) {
+            switch (gameResult) {
+                case WIN ->
+                        System.out.printf("Well done. The computer chose %s and failed%n", usersMove.computerChoice().getVal());
+                case DRAW -> System.out.printf("There is a draw (%s)%n", usersMove.computerChoice().getVal());
+                case LOSS -> System.out.printf("Sorry, but the computer chose %s%n", usersMove.computerChoice().getVal());
+            }
+        }
+
+        public void presentRating(int counter) {
+            System.out.printf("Your rating: %d%n", counter);
+        }
+
+        public int determineUserRating(List<String> ratingFileContent, String userName) {
+            for (String line : ratingFileContent) {
+                if (line.startsWith(userName + " ")) {
+                    return Integer.parseInt(line.substring(userName.length() + 1));
+                }
+            }
+            return 0;
+        }
+
+        public int updateCounter(GameResult gameResult, int counter) {
+            return switch (gameResult) {
+                case LOSS -> counter;
+                case DRAW -> counter + 50;
+                case WIN -> counter + 100;
+            };
+        }
+
+        public void endGame() {
+            System.out.println("Bye!");
+        }
+    }
+  learner_created: true
+- name: src/rockpaperscissors/WrongOptionException.java
+  visible: true
+  text: |
+    package rockpaperscissors;
+
+    public class WrongOptionException extends RuntimeException {
+        public WrongOptionException(String message) {
+            super(message);
+        }
+    }
+  learner_created: true
+- name: src/rockpaperscissors/MoveOptionResults.java
+  visible: true
+  learner_created: true
+feedback_link: https://hyperskill.org/learn/step/24619#comment
+status: Solved
+feedback:
+  message: Well done! You've finished the project. Select a new project on <a href="https://hyperskill.org/projects">Hyperskill</a>
+    to continue learning.
+  time: "Mon, 31 Jul 2023 18:33:18 UTC"
 record: -1

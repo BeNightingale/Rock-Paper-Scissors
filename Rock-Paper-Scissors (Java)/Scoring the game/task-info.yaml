@@ -311,9 +311,9 @@ files:
 - name: src/rockpaperscissors/scores.txt
   visible: true
   learner_created: true
-feedback_link: https://hyperskill.org/projects/314/stages/1767/implement#comment
+feedback_link: https://hyperskill.org/learn/step/24618#comment
 status: Solved
 feedback:
   message: Congratulations!
   time: "Sat, 22 Jul 2023 15:27:21 UTC"
-record: -1
+record: 4
